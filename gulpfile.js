@@ -16,8 +16,6 @@ gulp.task('default',['scripts','css'], function() {
 // JS check, concat and minify scripts
 gulp.task('scripts', function(){
 	gulp.src(['./src/js/lib/*.js','./src/js/app.js'])
-		// For JSLint, but knockout was reported too much error. 
-		// So just commented out here.
         // .pipe(jshint())
         // .pipe(jshint.reporter('default'))	
 		.pipe(concat('allJS.js'))
